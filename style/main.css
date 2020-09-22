@@ -124,12 +124,8 @@ abbr[title]{
     border: none;
     
 }
-
 .cards_people{
     margin-top: 2.5em;
-}
-.cards_people__card{
-    
 }
 .cards_people__card:hover{
     outline: 5px solid #63c6ae;
@@ -308,7 +304,7 @@ abbr[title]{
     }
     .header__nav a{
         background-color: white;
-        display: ;
+        
     }
     .header__nav li{
         border-bottom: none;
