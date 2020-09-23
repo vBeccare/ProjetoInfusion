@@ -156,6 +156,10 @@ img{
     position: absolute;
     top: 50%;
     cursor: pointer;
+    padding: 8px;
+    border: 1px solid white;
+    border-radius: 50%;
+    box-sizing: border-box;
 }
 .js .quote-slideshow .prev{
     left: 0px;
