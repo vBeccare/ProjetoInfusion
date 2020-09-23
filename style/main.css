@@ -20,6 +20,7 @@ img{
 .js .header{
     position: fixed;
     width: 100%;
+    z-index: 10;
 }
 .header__logo{
     text-transform: uppercase;
@@ -76,6 +77,91 @@ img{
 }
 .js .header__nav{
     transition: max-height 1s;
+}
+.js .notebook-slide{
+    overflow: hidden;
+    color: white;
+}
+
+.js .notebook-slide .slideshow{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    max-width: 950px;
+}
+
+.js .notebook-slide figure{
+    
+    opacity: 0;
+    transition: opacity 1s;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+.js .notebook-slide figure.show{
+    opacity: 1;
+   position: static;
+}
+
+.js .notebook-slide .prev, .js .notebook-slide .next{
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+.js .notebook-slide .prev{
+    left: 10px;
+}
+.js .notebook-slide .next{
+    right: 10px;
+}
+
+.js .quote-slideshow{
+    
+    position: relative;
+    width: 100%;
+    margin: auto;
+    max-width: 950px;
+    box-sizing: border-box;
+    padding: 0 50px;
+    color: white;
+    align-items: center;
+    
+    
+}
+.js .quote-slideshow figure h2{
+    margin-top: 0;
+}
+.js .quote-slideshow figure{
+    opacity: 0;
+    transition: opacity 1s;
+    position: absolute;
+    top: 0;
+    left: 50px;
+    right: 50px;
+    box-sizing: border-box;
+    margin: 0;
+   
+}
+.js .quote-slideshow figure.show{
+    opacity: 1;
+    position: static;
+    
+}
+
+.js .quote-slideshow .prev, .js .quote-slideshow .next{
+    z-index: 3;
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+.js .quote-slideshow .prev{
+    left: 0px;
+}
+.js .quote-slideshow .next{
+    right: 0px;
 }
 
 .hero{
@@ -222,6 +308,7 @@ abbr[title]{
     display: block;
     width: 100%;
 }
+
 
 .notebook-slide{
     background-color: #242a2c;

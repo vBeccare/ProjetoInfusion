@@ -38,7 +38,8 @@ function Menu(config){
 
     function openMenu(){
         var _top = _this.nav.getBoundingClientRect().top + 'px'
-
+        
+        // para poder fazer a animacao
         var _style = {
             maxHeight: 'calc(100vh - '+ _top +' )',
              overflow: 'hidden'

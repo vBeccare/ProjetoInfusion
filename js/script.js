@@ -6,8 +6,6 @@
 
     var $btnMenu = document.querySelector('.header__btnMenu');
     
-
-    
     var menu = new Menu({
         container: '.header__nav',
         toggleBtn: '.header__btnMenu',
@@ -15,7 +13,14 @@
     })
 
     var carousel = new Carousel ({
-        container: '.slideshow',
+        container: '.notebook-slide .slideshow',
+        itens: 'figure',
+        btnPrev: '.prev',
+        btnNext: '.next'
+    })
+
+    var quotes = new Carousel ({
+        container: '.quote-slideshow',
         itens: 'figure',
         btnPrev: '.prev',
         btnNext: '.next'

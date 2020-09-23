@@ -4,13 +4,13 @@ function Carousel(config){
     document.querySelector(config.container) : config.container
 
     this.itens = (typeof config.itens === 'string') ? 
-    this.container.querySelectorAll('this.itens') : config.itens
+    this.container.querySelectorAll(config.itens) : config.itens
 
     this.btnPrev = (typeof config.btnPrev === 'string') ? 
-    this.container.querySelector('this.btnPrev') : config.btnPrev
+    this.container.querySelector(config.btnPrev) : config.btnPrev
 
     this.btnNext = (typeof config.btnNext === 'string') ? 
-    this.container.querySelector('this.btnNext') : config.btnNext
+    this.container.querySelector(config.btnNext) : config.btnNext
 
     var _this = this;
     var _currentSlide = 0;
@@ -19,7 +19,7 @@ function Carousel(config){
 
     function init(){
         var _show = _this.container.querySelectorAll('.show');
-
+       
         Array.prototype.forEach.call(_show,function(sh){
             sh.classList.remove('show');
         })
